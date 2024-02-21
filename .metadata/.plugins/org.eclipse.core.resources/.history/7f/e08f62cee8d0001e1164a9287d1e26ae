@@ -1,0 +1,62 @@
+package com.JavaBasico.semana1.Dia2;
+
+/**
+ * Ejercicios de Introducción a Java
+ *
+ * @author Stefany
+ */
+public class Ejercicio2 {
+	public static void main(String[] args) {
+
+		/*
+		 * Ejercicio Nº 2 - Tipos de Datos - Grupal
+		 * 
+		 * a) Crea un programa que declare una variable para cada uno de los siguientes
+		 * tipos de datos: int, double, boolean y String. Asigna un valor a cada
+		 * variable y muestra su contenido en la consola.
+		 * 
+		 * b) Ahora, asigna valores que no correspondan al tipo de dato. Por ejemplo, un
+		 * int en un String o un String en un double… ¿Qué sucede con el programa? ¿Se
+		 * produce algún error? ¿En qué situaciones se genera error y en cuáles no?
+		 * Justificar el por qué de cada caso. Debatir con otros compañeros.
+		 */
+
+		// a) Declarar variables y asignar valores
+		int edad = 7;
+		double peso = 64;
+		boolean booleano = true;
+		String saludo = "Hola mundo!";
+
+		System.out.println("a) Valores iniciales:");
+		System.out.println("Entero: " + edad);
+		System.out.println("Decimal: " + peso);
+		System.out.println("Booleano: " + booleano);
+		System.out.println("Texto: " + saludo);
+
+		// b) Asignar valores incorrectos y observar resultados
+		edad = "Esto es un error"; // Intento de asignar un String a un int
+		peso = "Otro error"; // Intento de asignar un String a un double
+		booleano = 42; // Intento de asignar un entero a un boolean
+		saludo = 123; // Intento de asignar un entero a un String
+
+		// Mostrar contenido después de asignar valores incorrectos
+		System.out.println("\nb) Valores con asignaciones incorrectas:");
+		System.out.println("Entero: " + entero);
+		System.out.println("Decimal: " + decimal);
+		System.out.println("Booleano: " + booleano);
+		System.out.println("Texto: " + texto);
+
+		// Discusión:
+		// - Los errores en las asignaciones ocurren cuando se intenta asignar un tipo
+		// de dato incompatible.
+		// - El programa no compilará si se intenta asignar un tipo incorrecto al
+		// declarar la variable.
+		// - En tiempo de ejecución, un error ocurrirá si se intenta cambiar el tipo de
+		// dato de una variable.
+
+		// no se puede convertir un tipo de dato numerico a uno de cadena, por ejemplo
+		// un double a un tipo de dato string
+		// esto dara error y no se puede asignar valor
+
+	}
+}

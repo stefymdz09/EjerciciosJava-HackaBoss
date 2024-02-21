@@ -1,0 +1,54 @@
+package com.JavaBasico.semana1.Dia2;
+
+import java.util.Scanner;
+
+/**
+ * Ejercicios de Introducción a Java
+ *
+ * @author Stefany
+ */
+public class Ejercicio4 {
+
+	public static void main(String[] args) {
+
+
+		/*
+		 * Ejercicio Nº 4 - Operaciones de Lectura - Grupal
+		 * 
+		 * Crea un programa que pida al usuario que ingrese por teclado dos números
+		 * enteros y realice las siguientes operaciones con ellos: suma, resta,
+		 * multiplicación y división. Muestra por pantalla/consola los resultados de
+		 * cada una de las operaciones con un mensaje amigable para el usuario.
+		 */
+
+
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.print("Ingrese el primer número entero: ");
+		int numero1 = scanner.nextInt();
+
+		System.out.print("Ingrese el segundo número entero: ");
+		int numero2 = scanner.nextInt();
+
+		int suma = numero1 + numero2;
+		int resta = numero1 - numero2;
+		int multiplicacion = numero1 * numero2;
+		double division;
+		double numero3;
+	
+
+		if (numero2 != 0) {
+			   division = (double) numero1 / numero2;
+			"El resultado de la división: " + numero1 + " / " + numero2 + " es " + division);
+		} else {
+			System.out.println("No es posible realizar la división (división por cero).");
+			
+			return;
+		}
+		System.out.println("El resultado de la suma: " + numero1 + " + " + numero2 + " es " + suma);
+		System.out.println("El resultado de la resta: " + numero1 + " - " + numero2 + " es " + resta);
+		
+		
+		scanner.close();
+	}
+}

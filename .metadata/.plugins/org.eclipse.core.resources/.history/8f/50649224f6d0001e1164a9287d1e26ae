@@ -1,0 +1,44 @@
+package com.JavaBasico.semana1.Dia4.Ejercicio2;
+
+public class prueba {
+
+	 public static void main(String[] args) {
+	        Persona[] personas = new Persona[5];
+
+	        // Crear cinco personas y guardarlas en el vector
+	        // ...
+
+	        // Recorrer el vector y mostrar por pantalla el nombre y edad de cada persona
+	        for (Persona persona : personas) {
+	            persona.mostrarInformacion();
+	            System.out.println("---------------");
+	        }
+
+	        // Cambiar el nombre de dos personas
+	        // ...
+
+	        // Mostrar por pantalla el antes y después de los datos de las personas cuyos nombres fueron cambiados
+	        for (Persona persona : personas) {
+	            String nombreOriginal = persona.getNombre();
+	            
+	            // Realizar cambios en el nombre (puedes usar métodos setters)
+	            // ...
+
+	            String nombreModificado = persona.getNombre();
+
+	            if (!nombreOriginal.equals(nombreModificado)) {
+	                System.out.println("Nombre original: " + nombreOriginal);
+	                System.out.println("Nombre modificado: " + nombreModificado);
+	                System.out.println("---------------");
+	            }
+	        }
+
+	        // Recorrer el vector y mostrar por pantalla únicamente a las personas cuya edad sea mayor de 30 años
+	        for (Persona persona : personas) {
+	            if (persona.getEdad() > 30) {
+	                persona.mostrarInformacion();
+	                System.out.println("---------------");
+	            }
+	        }
+	    }
+}

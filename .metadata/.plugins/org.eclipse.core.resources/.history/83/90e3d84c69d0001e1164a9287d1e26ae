@@ -1,0 +1,15 @@
+package com.JavaBasico.semana1.Dia2;
+
+public class Ejercicio3 {
+
+	public static void main(String[] args) {
+		double base = 12.0;
+		double altura = 7.5;
+		double area;
+		//calcular el área del triágulo
+		area = (base * altura) / 2;
+		System.out.println("El área del triángulo es: " + area);
+
+	}
+
+}
