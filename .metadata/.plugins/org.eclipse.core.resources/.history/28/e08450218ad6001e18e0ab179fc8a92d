@@ -1,0 +1,104 @@
+package com.JavaBasico.Semana2.Dia8;
+
+import java.util.ArrayList;
+
+public class Main {
+	public static void main(String[] args) {
+		
+		a) Crear 10 objetos de tipo Producto con sus correspondientes valores cargados (por ejemplo, teléfono, laptop, auriculares/cascos, cargador, tablet, etc).
+
+	b) Guardar estos objetos creados en un ArrayList.
+
+	c) Recorrer el ArrayList y determinar el producto con el mayor precio de venta.
+
+	d) Recorrer el ArrayList y determinar el producto con el menor precio de costo.
+
+	e) Borrar el producto que se encuentre en la posición 5 del ArrayList.
+
+	f) Determinar el producto que tenga la mayor cantidad en stock. A ese producto, descontarle 3 unidades del stock y actualizar el registro en la lista en base a eso.
+
+	g) Mostrar siempre por consola un mensaje informativo luego de resolver cada punto.
+	//b) Guardar estos objetos creados en un ArrayList.
+        ArrayList<Producto> productos = new ArrayList<>();
+
+       //a) Crear 10 objetos de tipo Producto con sus correspondientes valores cargados
+	   //(por ejemplo, teléfono, laptop, auriculares/cascos, cargador, tablet, etc).
+	
+	(int codigo, String nombre, String marca, String tipo, double precioCosto, double precioVenta,
+			int cantidadStock) {
+        productos.add(new Producto(1, "Movil", "Apple", "Smartphone", 300, 450, 20));
+        productos.add(new Producto(2, "Auriculares", "HP", "Portátil", 600, 900, 10));
+        productos.add(new Producto(3, "Ordenador", "Sony", "Accesorio", 40, 70, 50));
+        productos.add(new Producto(4, "Tablet", "Apple", "Accesorio", 15, 25, 30));
+        productos.add(new Producto(5, "Cargador", "Huawey", "Accesorio", 50, 40, 50));
+        productos.add(new Producto(6, "Tablet", "HP", "Portatil", 80, 130, 12));
+        productos.add(new Producto(7, "Telefono", "JBL", "Accesorio", 50, 80, 25));
+        productos.add(new Producto(8, "Teclado", "Dell", "Accesorio", 100, 150, 8));
+        productos.add(new Producto(9, "Televisor", "Samsung", "Accesorio", 70, 100, 18));
+        productos.add(new Producto(10, "Impresora", "LG", "Accesorio", 25, 40, 22));
+
+        // 	c) Recorrer el ArrayList y determinar el producto con el mayor precio de venta.
+        double maxPrecioVenta = Double.MIN_VALUE;
+        Producto productoMaxPrecioVenta = null;
+        
+        // c) Encontrar el producto con el mayor precio de venta
+        Producto productoMayorPrecioVenta = encontrarProductoMayorPrecioVenta(productos);
+        System.out.println("\nProducto con mayor precio de venta: " + productoMayorPrecioVenta);
+
+        for (Producto producto1 : productos) {
+            if (producto1.getPrecioVenta() > maxPrecioVenta) {
+                maxPrecioVenta = producto1.getPrecioVenta();
+                productoMaxPrecioVenta = producto1;
+            }
+        }
+        System.out.println("El producto con el mayor precio de venta es: " + productoMaxPrecioVenta.getNombre());
+
+       
+        // Recorrer el ArrayList y determinar el producto con el menor precio de costo
+        double minPrecioCosto = Double.MAX_VALUE;
+        Producto productoMinPrecioCosto = null;
+
+        for (Producto producto : productos) {
+            if (producto.getPrecioCosto() < minPrecioCosto) {
+                minPrecioCosto = producto.getPrecioCosto();
+                productoMinPrecioCosto = producto;
+            }
+        }
+        System.out.println("\nEl producto con el menor precio de costo es: " + productoMinPrecioCosto.getNombre());
+
+        // Borrar el producto que se encuentre en la posición 5 del ArrayList
+        if (productos.size() > 5) {
+            Producto productoEliminado = productos.remove(5);
+            System.out.println("Se ha eliminado el producto en la posición 5: " + productoEliminado.getNombre() + " " + productoEliminado.getMarca());
+        } else {
+            System.out.println("No hay suficientes productos en la lista para eliminar en la posición 5.");
+        }
+
+        // Determinar el producto con la mayor cantidad en stock
+        int maxStock = Integer.MIN_VALUE;
+        Producto productoMaxStock = null;
+
+        for (Producto producto : productos) {
+            if (producto.getCantidadStock() > maxStock) {
+                maxStock = producto.getCantidadStock();
+                productoMaxStock = producto;
+            }
+        }
+
+        // Descontar 3 unidades del stock del producto con la mayor cantidad
+        if (productoMaxStock != null) {
+            productoMaxStock.setCantidadStock(productoMaxStock.getCantidadStock() - 3);
+            System.out.println("\nEl producto con la mayor cantidad en stock es: " + productoMaxStock.getNombre());
+            System.out.println("Se han descontado 3 unidades del stock.");
+        } else {
+            System.out.println("No hay productos en el productos.");
+        } 
+        
+    }
+
+	private static Producto encontrarProductoMayorPrecioVenta(ArrayList<Producto> productos) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

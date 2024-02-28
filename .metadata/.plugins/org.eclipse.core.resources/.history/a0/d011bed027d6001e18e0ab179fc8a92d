@@ -1,0 +1,38 @@
+package com.JavaBasico.Semana2.Dia6.Ejercicio1;
+
+import java.util.ArrayList;
+
+import com.JavaBasico.Semana2.Dia6.Ejercicio1.Interfaces.Combustion;
+import com.JavaBasico.Semana2.Dia6.Ejercicio1.Interfaces.Electrico;
+
+public class IntegradorVehiculos {
+  
+    public static void main(String[] args) {
+       
+        ArrayList<Vehiculo> vehiculos = new ArrayList<>();
+
+        // Crear objetos de diferentes tipos de vehículos y agregarlos al ArrayList
+        Auto autoElectrico = new Auto(75000, 5, 1, "ABC123", "Tesla", "Model S", 2020, 80000.0);
+        Camioneta camionetaCombustion = new Camioneta(80, 10.5, 2, "XYZ789", "Toyota", "Hilux", 2019, 45000.0);
+        Moto motoCombustion = new Moto(600, "4 tiempos", 3, "DEF456", "Honda", "CBR600", 2021, 12000.0);
+
+        vehiculos.add(autoElectrico);
+        vehiculos.add(camionetaCombustion);
+        vehiculos.add(motoCombustion);
+
+        // Mostrar información de cada vehículo
+        for (Vehiculo vehiculo : vehiculos) {
+            vehiculo.toString();
+            System.out.println("Antigüedad: " + vehiculo.calcularAntiguedad());
+           
+            if (vehiculo instanceof Electrico) {
+                ((Electrico) vehiculo).cargarEnergia();
+            } else if (vehiculo instanceof Combustion) {
+                ((Combustion) vehiculo).recargarCombustible();
+            }
+
+        }
+        
+    }
+    
+}

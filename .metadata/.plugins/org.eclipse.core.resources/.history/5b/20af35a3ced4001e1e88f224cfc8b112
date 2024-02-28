@@ -1,0 +1,117 @@
+package com.JavaBasico.Semana2.Dia5.Ejercicio2;
+
+public class Vestimenta {
+
+	/*
+	 * Ejercicio Nº 2 - Herencia y Polimorfismo - Individual
+	 * 
+	 * Crear una clase llamada Vestimenta con los atributos: código, nombre, precio,
+	 * marca, talla y color (con sus métodos y constructores correspondientes).
+	 * 
+	 * a) Crear las siguientes clases hijas que compartan sus atributos y métodos:
+	 * 
+	 * Zapato: material, tipoCierre
+	 * 
+	 * Pantalon: estilo, tipoTejido
+	 * 
+	 * Camiseta: manga, cuello
+	 * 
+	 * Sombrero: tipo, tamaño
+	 * 
+	 * b) Una vez creadas las clases, crear en el Main un vector de tipo Vestimenta
+	 * y almacenar 3 zapatos, 3 pantalones, 2 camisetas y 1 sombrero (crear un
+	 * objeto con parámetros para cada uno de ellos).
+	 * 
+	 * c) Crear los siguientes métodos (en cada subclase correspondiente):
+	 * 
+	 * Zapato: método para mostrar un mensaje en pantalla que diga
+	 * "Estos zapatos son de marca: " (mostrar marca).
+	 * 
+	 * Pantalon: método para mostrar un mensaje en pantalla que diga
+	 * "Estos pantalones son de marca: " (mostrar estilo).
+	 * 
+	 * Camiseta: método para mostrar un mensaje en pantalla que diga
+	 * "Esta camiseta es de marca: " (mostrar manga).
+	 * 
+	 * Sombrero: método para mostrar un mensaje en pantalla que diga
+	 * "Este sombrero es de marca: " (mostrar tipo).
+	 * 
+	 * d) Recorrer el vector y ejecutar el método que corresponde en cada posición
+	 * del mismo.
+	 * 
+	 * PISTA: Todos tendrán el mismo método, con el mismo nombre, pero únicamente
+	 * cambia el mensaje que muestran. Tener en cuenta para esto la implementación
+	 * de herencia y sobrescritura de métodos
+	 */
+
+	private int codigo;
+	private String nombre;
+	private double precio;
+	private String marca;
+	private String talla;
+	private String color;
+
+	public Vestimenta(int codigo, String nombre, double precio, String marca, String talla, String color) {
+		super();
+		this.codigo = codigo;
+		this.nombre = nombre;
+		this.precio = precio;
+		this.marca = marca;
+		this.talla = talla;
+		this.color = color;
+	}
+
+	public Vestimenta() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public int getCodigo() {
+		return codigo;
+	}
+
+	public void setCodigo(int codigo) {
+		this.codigo = codigo;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public double getPrecio() {
+		return precio;
+	}
+
+	public void setPrecio(double precio) {
+		this.precio = precio;
+	}
+
+	public String getMarca() {
+		return marca;
+	}
+
+	public void setMarca(String marca) {
+		this.marca = marca;
+	}
+
+	public String getTalla() {
+		return talla;
+	}
+
+	public void setTalla(String talla) {
+		this.talla = talla;
+	}
+
+	public String getColor() {
+		return color;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+}

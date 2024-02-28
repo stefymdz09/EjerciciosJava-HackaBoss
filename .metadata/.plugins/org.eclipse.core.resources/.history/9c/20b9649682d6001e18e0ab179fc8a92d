@@ -1,0 +1,36 @@
+package com.JavaBasico.Semana2.Dia6.Ejercicio1;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		// c) Crear un objeto de cada clase hija. Llamar a los 3 métodos saludar desde
+		// cada objeto.
+		Mamifero mamifero = new Mamifero(1, "Panda", 8, "Pelaje", "Carnívoro", 4, "Vivípara", "Amarillo", "Savana");
+		Ave ave = new Ave(2, "Águila", 7, "Plumaje", "Carnívoro", 2.5, "Planeador", "Marrón", "Pico curvado");
+		Reptil reptil = new Reptil(3, "Serpiente", 7, "Escamas", "Carnívoro", 2.0, "Constrictor", "Veneno", "Selva");
+
+		mamifero.saludar();
+		ave.saludar();
+		reptil.saludar();
+
+		// d) Crear un objeto de tipo animal e intentar asignarle al Mamifero creado…
+		// ¿Qué sucede? ¿Es posible hacer esto? ¿Se aplica alguna propiedad para esto?
+		Animal animal = new Animal();
+		animal = mamifero;
+
+		/*
+		 * Sí, es posible asignar un objeto de tipo Mamifero a un objeto de tipo Animal.
+		 * Esta subclase Mamifero hereda características y comportamientos de la
+		 * superclase (Animal) Un objeto de las subclases simpre va a poder heredar
+		 * metodos/atributos..etc de las superclases que tenga, hasta de Object
+		 */
+
+		// e) Cambiar el modificador de acceso de los métodos de "public" a "private".
+		// Intentar acceder desde el "main" a estos métodos. ¿Qué sucede? ¿Es posible
+		// hacer esto?
+		// No será posible acceder a los métodos si cambiamos su modificador de acceso a
+		// "private" desde el "main".
+	}
+
+}

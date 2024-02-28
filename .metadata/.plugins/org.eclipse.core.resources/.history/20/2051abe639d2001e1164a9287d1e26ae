@@ -1,0 +1,9 @@
+package com.JavaBasico.Semana2.Dia5.Ejercicio2;
+
+public class Sombrero {
+
+	public Sombrero() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

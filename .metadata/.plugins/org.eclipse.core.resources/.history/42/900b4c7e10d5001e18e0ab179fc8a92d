@@ -1,0 +1,12 @@
+package com.JavaBasico.Semana2.Dia6.Ejercicio1;
+
+public abstract class Vehiculo {
+	   
+    private int id;
+    private String placa;
+    private String marca;
+    private String modelo;
+    protected int anio;
+    private double costo;
+	
+}

@@ -1,0 +1,52 @@
+package com.JavaBasico.Semana2.Dia6.Ejercicio1;
+
+import java.util.ArrayList;
+
+import com.JavaBasico.Semana2.Dia6.Ejercicio1.Interfaces.Combustion;
+import com.JavaBasico.Semana2.Dia6.Ejercicio1.Interfaces.Electrico;
+
+public class Main {
+
+	public static void main(String[] args) {
+		/*
+		 * f) Main: En el programa principal, crea objetos de diferentes tipos de
+		 * vehículos (autos eléctricos, camionetas de combustión, motos de combustión) y
+		 * añádelos a un ArrayList de tipo Vehiculo. Muestra información sobre cada uno
+		 * de ellos, incluyendo el calculo de la antigüedad y la recarga de energía o
+		 * combustible según corresponda.
+		 * 
+		 * g) Polimorfismo: Recorrer el ArrayList de Vehículos y mostrar la información
+		 * de cada uno de ellos.
+		 */
+
+		ArrayList<Vehiculo> vehiculos = new ArrayList<>();
+
+		// Crear objetos de diferentes tipos de vehículos y agregarlos al ArrayList
+		Auto autoElectrico = new Auto(75000, 5, 1, "ABC123", "Tesla", "Model S", 2020, 80000.0);
+		Camioneta camionetaCombustion = new Camioneta(80, 10.5, 2, "XYZ789", "Toyota", "Hilux", 2019, 45000.0);
+		Moto motoCombustion = new Moto(600, "4 tiempos", 3, "DEF456", "Honda", "CBR600", 2021, 12000.0);
+
+		Auto autoElectrico1 = new Auto(1, "MSF234", "KIA", "Modelo M", 2022, 75300, 60000, 8);
+		Camioneta camionetaCombustion1 = new Camioneta(2, "RTH678", "Jeep", "Modelo U", 2021, 550000, 90, 12);
+		Moto motoCombustion1 = new Moto(3, "YYP995", "urbet", "Model F", 0, 0, 0, null);
+
+		vehiculos.add(autoElectrico1);
+		vehiculos.add(camionetaCombustion1);
+		vehiculos.add(motoCombustion1);
+
+		// Mostrar información de cada vehículo
+		for (Vehiculo vehiculo : vehiculos) {
+			vehiculo.toString();
+			System.out.println("Antigüedad: " + vehiculo.calcularAntiguedad());
+
+			if (vehiculo instanceof Electrico) {
+				((Electrico) vehiculo).cargarEnergia();
+			} else if (vehiculo instanceof Combustion) {
+				((Combustion) vehiculo).recargarCombustible();
+			}
+
+		}
+
+	}
+
+}

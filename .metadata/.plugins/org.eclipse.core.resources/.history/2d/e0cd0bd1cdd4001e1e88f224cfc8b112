@@ -1,0 +1,41 @@
+package com.JavaBasico.Semana2.Dia5.Ejercicio2;
+
+public class Camiseta extends Vestimenta {
+
+	private String manga;
+	private String cuello;
+
+	public Camiseta(int codigo, String nombre, double precio, String marca, String talla, String color, String manga,
+			String cuello) {
+		super(codigo, nombre, precio, marca, talla, color);
+		this.manga = manga;
+		this.cuello = cuello;
+	}
+
+	public Camiseta() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public Camiseta(int codigo, String nombre, double precio, String marca, String talla, String color) {
+		super(codigo, nombre, precio, marca, talla, color);
+		// TODO Auto-generated constructor stub
+	}
+
+	public String getManga() {
+		return manga;
+	}
+
+	public void setManga(String manga) {
+		this.manga = manga;
+	}
+
+	public String getCuello() {
+		return cuello;
+	}
+
+	public void setCuello(String cuello) {
+		this.cuello = cuello;
+	}
+
+}
