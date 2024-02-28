@@ -1,0 +1,92 @@
+
+# Ejercicio Nº 1 - Repaso POO - Grupal
+
+
+Este ejercicio tiene como objetivo poner en práctica conceptos de Programación Orientada a Objetos (POO) mediante la creación de una clase Verdura. Se espera que, en equipos de 3 o 4 integrantes, se sigan los pasos descritos a continuación:
+
+## Clase Verdura
+### Atributos:
+
+
+- id
+- nombre
+- color
+- calorías
+- debeCocinarse
+### Constructores:
+
+Constructor que inicializa todos los atributos.
+Métodos:
+
+Métodos getters y setters para todos los atributos.
+### Acciones a Realizar
+- a) Crear un vector de tipo Verdura: Crear un array de tipO Verdura capaz de almacenar 5 verduras. Crear 5 objetos de tipo Verdura y guardarlos en el vector.
+
+- b) Recorrer y Mostrar Datos: Recorrer el vector creado y mostrar por pantalla el nombre y las calorías de las verduras almacenadas.
+
+- c) Cambiar Datos de Dos Verduras: Cambiar todos los datos de dos verduras en el vector.Mostrar por pantalla los datos de todas las verduras luego del cambio.
+
+- d) Filtrar Verduras por Color:Recorrer el vector y mostrar por pantalla únicamente las verduras que sean de color verde.
+
+# Ejercicio Nº 1 - Repaso POO - Grupal
+
+
+Este ejercicio tiene como objetivo poner en práctica conceptos de Programación Orientada a Objetos (POO) mediante la creación de una clase Verdura. Se espera que, en equipos de 3 o 4 integrantes, se sigan los pasos descritos a continuación:
+
+## Clase Verdura
+### Atributos:
+
+
+- id
+- nombre
+- color
+- calorías
+- debeCocinarse
+
+### Constructores:
+
+Constructor que inicializa todos los atributos.
+Métodos:
+
+Métodos getters y setters para todos los atributos.
+
+### Acciones a Realizar
+- a) Crear un vector de tipo Verdura: Crear un array de tipO Verdura capaz de almacenar 5 verduras. Crear 5 objetos de tipo Verdura y guardarlos en el vector.
+
+- b) Recorrer y Mostrar Datos: Recorrer el vector creado y mostrar por pantalla el nombre y las calorías de las verduras almacenadas.
+
+- c) Cambiar Datos de Dos Verduras: Cambiar todos los datos de dos verduras en el vector.Mostrar por pantalla los datos de todas las verduras luego del cambio.
+
+- d) Filtrar Verduras por Color:Recorrer el vector y mostrar por pantalla únicamente las verduras que sean de color verde.
+
+# Ejercicio Nº 1 - Repaso POO - Grupal
+
+
+Este ejercicio tiene como objetivo poner en práctica conceptos de Programación Orientada a Objetos (POO) mediante la creación de una clase Verdura. Se espera que, en equipos de 3 o 4 integrantes, se sigan los pasos descritos a continuación:
+
+## Clase Verdura
+### Atributos:
+
+
+- id
+- nombre
+- color
+- calorías
+- debeCocinarse
+
+### Constructores:
+
+Constructor que inicializa todos los atributos.
+Métodos:
+
+Métodos getters y setters para todos los atributos.
+
+### Acciones a Realizar
+- a) Crear un vector de tipo Verdura: Crear un array de tipO Verdura capaz de almacenar 5 verduras. Crear 5 objetos de tipo Verdura y guardarlos en el vector.
+
+- b) Recorrer y Mostrar Datos: Recorrer el vector creado y mostrar por pantalla el nombre y las calorías de las verduras almacenadas.
+
+- c) Cambiar Datos de Dos Verduras: Cambiar todos los datos de dos verduras en el vector.Mostrar por pantalla los datos de todas las verduras luego del cambio.
+
+- d) Filtrar Verduras por Color:Recorrer el vector y mostrar por pantalla únicamente las verduras que sean de color verde.
+
