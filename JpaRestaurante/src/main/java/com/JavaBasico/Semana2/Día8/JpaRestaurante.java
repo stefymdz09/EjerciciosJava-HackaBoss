@@ -3,8 +3,9 @@
  */
 package com.JavaBasico.Semana2.Día8;
 
+import com.JavaBasico.Semana2.Día8.logica.Controladora;
 import com.JavaBasico.Semana2.Día8.logica.Platillo;
-import com.JavaBasico.Semana2.Día8.persistencia.ControladoraPersistencia;
+
 
 /**
  *
@@ -12,9 +13,9 @@ import com.JavaBasico.Semana2.Día8.persistencia.ControladoraPersistencia;
  */
 public class JpaRestaurante {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
-        ControladoraPersistencia controladoraPersis = new ControladoraPersistencia();
+        Controladora controladoraPersis = new Controladora();
 
         //Crear un nuevo objeto platillo y darlo de alta en la base de datos mediante JPA.
         Platillo platillo1 = new Platillo("Hamburguesa", "Pan, carne,tomate,queso,bacon", 12.0);
