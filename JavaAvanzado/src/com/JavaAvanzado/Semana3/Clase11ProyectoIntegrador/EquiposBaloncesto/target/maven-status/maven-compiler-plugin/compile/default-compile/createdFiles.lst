@@ -1,0 +1,11 @@
+com\desarrollo\equiposbaloncesto\persistence\EquipoJpaController.class
+com\desarrollo\equiposbaloncesto\persistence\exceptions\IllegalOrphanException.class
+com\desarrollo\equiposbaloncesto\models\Partido.class
+com\desarrollo\equiposbaloncesto\resources\JakartaEE8Resource.class
+com\desarrollo\equiposbaloncesto\persistence\PartidoJpaController.class
+com\desarrollo\equiposbaloncesto\persistence\exceptions\NonexistentEntityException.class
+com\desarrollo\equiposbaloncesto\persistence\PersistenceController.class
+com\desarrollo\equiposbaloncesto\logics\Controller.class
+com\desarrollo\equiposbaloncesto\models\Equipo.class
+com\desarrollo\equiposbaloncesto\JakartaRestConfiguration.class
+com\desarrollo\equiposbaloncesto\persistence\exceptions\PreexistingEntityException.class

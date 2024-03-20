@@ -3,4 +3,7 @@
     <fullyQualifiedTypeName name="com.JavaBasico.Semana2.Dia6.Ejercicio1.Interfaces.Electrico"/>
     <fullyQualifiedTypeName name="com.JavaBasico.Semana2.Dia6.Ejercicio1.Interfaces.Combustion"/>
     <fullyQualifiedTypeName name="java.util.Calendar"/>
+    <fullyQualifiedTypeName name="java.lang.ArrayStoreException"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
 </qualifiedTypeNameHistroy>
